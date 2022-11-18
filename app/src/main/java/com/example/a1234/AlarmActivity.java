@@ -24,6 +24,6 @@ public class AlarmActivity extends AppCompatActivity {
                 Intent intent = new Intent(AlarmActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
-        });
+        });//Design
     }
 }
