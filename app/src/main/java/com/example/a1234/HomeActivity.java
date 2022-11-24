@@ -46,7 +46,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        chat = (ImageView) findViewById(R.id.schat);
+        chat = (ImageView) findViewById(R.id.chat);
         chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
