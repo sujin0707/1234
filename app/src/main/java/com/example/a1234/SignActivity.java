@@ -74,3 +74,4 @@ public class SignActivity extends AppCompatActivity {
         database database = new database(name, id, password);
         databaseReference.child("users").child(name).setValue(database);}
 }
+//dfafd
