@@ -60,7 +60,7 @@
 
             <View
                 android:layout_width="350dp"
-                android:layout_height="500dp"
+                android:layout_height="540dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
@@ -69,7 +69,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="446dp"
+                android:layout_height="500dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
@@ -92,6 +92,15 @@
                     android:hint="플랫폼명을 입력해주세요. ex)쿠팡"
                     android:textSize="20dp"
                     android:id="@+id/edit2"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="구매할 물품 종류를 입력해주세요."
+                    android:textSize="20dp"
+                    android:id="@+id/edit3"></EditText>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -185,7 +194,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
-                    android:hint="설명을 입력해주세요."
+                    android:hint="설명을 입력해주세요. ex) 스마일배송"
                     android:textSize="20dp"></EditText>
 
                 <LinearLayout

@@ -117,12 +117,12 @@
                             android:layout_weight="1"></View>
 
                         <ImageButton
+                            android:id="@+id/plusbutton"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="right"
                             android:layout_marginRight="20dp"
-                            android:background="@drawable/plusbutton"
-                            android:id="@+id/plusbutton"/>
+                            android:background="@drawable/plusbutton" />
 
                     </LinearLayout>
 

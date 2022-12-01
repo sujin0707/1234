@@ -3,6 +3,7 @@ package com.example.a1234;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,7 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private ImageView back, alarm, chat, plusbutton;
+    private ImageView back, alarm, chat, back2;
+    private ImageButton plusbutton;
     private TextView logout;
 
     @Override
@@ -55,7 +57,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        plusbutton = (ImageView) findViewById(R.id.plusbutton);
+        plusbutton = (ImageButton) findViewById(R.id.plusbutton);
         plusbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,5 +65,16 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        back2 = (ImageView) findViewById(R.id.back2);
+        back2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
