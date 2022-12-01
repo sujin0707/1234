@@ -40,15 +40,6 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-            <ImageView
-                android:id="@+id/alram_yes_icon"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="11dp"
-                android:layout_marginRight="11dp"
-                android:layout_gravity="right"
-                app:srcCompat="@drawable/notification" />
-
         </LinearLayout>
 
         <FrameLayout
@@ -60,7 +51,7 @@
 
             <View
                 android:layout_width="350dp"
-                android:layout_height="540dp"
+                android:layout_height="500dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
@@ -69,7 +60,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
+                android:layout_height="446dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
@@ -92,15 +83,6 @@
                     android:hint="플랫폼명을 입력해주세요. ex)쿠팡"
                     android:textSize="20dp"
                     android:id="@+id/edit2"></EditText>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:hint="구매할 물품 종류를 입력해주세요."
-                    android:textSize="20dp"
-                    android:id="@+id/edit3"></EditText>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -146,6 +128,7 @@
                                 android:layout_height="wrap_content"
                                 android:hint=""
                                 android:inputType="number"
+                                android:id="@+id/edit3"
                                 android:textSize="20dp"></EditText>
 
                             <TextView
@@ -174,6 +157,7 @@
                                 android:layout_height="wrap_content"
                                 android:hint=""
                                 android:inputType="number"
+                                android:id="@+id/edit4"
                                 android:textSize="20dp"></EditText>
 
                             <TextView
@@ -194,7 +178,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
-                    android:hint="설명을 입력해주세요. ex) 스마일배송"
+                    android:hint="설명을 입력해주세요."
+                    android:id="@+id/edit5"
                     android:textSize="20dp"></EditText>
 
                 <LinearLayout
@@ -219,6 +204,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="링크를 입력해주세요."
+                        android:id="@+id/linkedit"
                         android:textSize="20dp"></EditText>
                 </LinearLayout>
 
@@ -320,14 +306,14 @@
                         android:text="분"
                         android:textSize="20dp"></TextView>
                 </LinearLayout>
-                    <Button
-                        android:id="@+id/button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="글 올리기"
-                        android:backgroundTint="#445EFF"
-                        android:textSize="20dp" />
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="글 올리기"
+                    android:backgroundTint="#445EFF"
+                    android:textSize="20dp" />
 
 
             </LinearLayout>
