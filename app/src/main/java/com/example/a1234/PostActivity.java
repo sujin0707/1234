@@ -55,3 +55,4 @@ public class PostActivity extends AppCompatActivity {
         databaseReference.child("text").child(title).setValue(database);
     }
 }
+//42323
