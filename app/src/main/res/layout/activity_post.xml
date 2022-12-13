@@ -27,7 +27,7 @@
 
 
             <ImageView
-                android:id="@+id/Top_Account"
+                android:id="@+id/back5"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="11dp"
@@ -307,7 +307,7 @@
                         android:textSize="20dp"></TextView>
                 </LinearLayout>
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/postbutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

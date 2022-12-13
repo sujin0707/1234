@@ -1,23 +1,21 @@
 package com.example.a1234;
 
-import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class PostActivity extends AppCompatActivity {
     private EditText title, platform, peoplenum, leastmoney, exo, link, year, month, day, hour, minute;
     private Button button;
+    private ImageView back;
 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = database.getReference();
@@ -38,7 +36,8 @@ public class PostActivity extends AppCompatActivity {
         day = (EditText) findViewById(R.id.IntDeadline_day);
         hour = (EditText) findViewById(R.id.IntDeadline_hour);
         minute = (EditText) findViewById(R.id.IntDeadline_minute);
-        button = (Button) findViewById(R.id.button);
+        button = (Button) findViewById(R.id.postbutton);
+        back = (ImageView) findViewById(R.id.back5);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +45,17 @@ public class PostActivity extends AppCompatActivity {
                 adddatabase(title.getText().toString(),platform.getText().toString(),peoplenum.getText().toString(),
                         leastmoney.getText().toString(),exo.getText().toString(),link.getText().toString(),year.getText().toString(),
                         month.getText().toString(),day.getText().toString(),hour.getText().toString(),minute.getText().toString());
+                Intent intent = new Intent(PostActivity.this, HomeActivity1.class);
+                startActivity(intent);
+            }
+        });
+
+        back = (ImageView) findViewById(R.id.back5);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PostActivity.this, HomeActivity1.class);
+                startActivity(intent);
             }
         });
     }

@@ -3,29 +3,28 @@ package com.example.a1234;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity1 extends AppCompatActivity {
 
     private ImageView back, alarm, chat, back2;
-    private ImageButton plusbutton;
+    private ImageView plusbutton;
     private TextView logout;
 
     @Override
     protected void onCreate(@Nullable Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_home1);
 
         back = (ImageView) findViewById(R.id.back2);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+                Intent intent = new Intent(HomeActivity1.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +33,7 @@ public class HomeActivity extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+                Intent intent = new Intent(HomeActivity1.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -43,25 +42,25 @@ public class HomeActivity extends AppCompatActivity {
         alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, AlarmActivity.class);
+                Intent intent = new Intent(HomeActivity1.this, AlarmActivity.class);
                 startActivity(intent);
             }
         });
 
-        chat = (ImageView) findViewById(R.id.chat);
+        chat = (ImageView) findViewById(R.id.schat);
         chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, ChatActivity.class);
+                Intent intent = new Intent(HomeActivity1.this, ChatActivity.class);
                 startActivity(intent);
             }
         });
 
-        plusbutton = (ImageButton) findViewById(R.id.plusbutton);
+        plusbutton = (ImageView) findViewById(R.id.plusbutton);
         plusbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, PostActivity.class);
+                Intent intent = new Intent(HomeActivity1.this, PostActivity.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +69,7 @@ public class HomeActivity extends AppCompatActivity {
         back2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+                Intent intent = new Intent(HomeActivity1.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         food.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                Intent intent = new Intent(MainActivity.this, HomeActivity1.class);
                 startActivity(intent);
             }
         });

@@ -1,58 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/backcolor"
+tools:context=".HomeActivity1">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/backcolor"
-    tools:context=".ChatActivity">
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="204dp"
+    tools:layout_editor_absoluteY="0dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/backcolor"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:id="@+id/back2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/ic_baseline_keyboard_arrow_left_24" />
 
             <TextView
+                android:id="@+id/logout2"
                 android:layout_width="100dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
                 android:text="로그아웃"
-                android:id="@+id/logout3"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="340dp"
-                android:id="@+id/alarm3"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="335dp"
+                android:id="@+id/alarm2"
                 android:background="@drawable/notification"/>
-        </FrameLayout>
 
+        </FrameLayout>
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="734dp">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <FrameLayout
-            android:layout_width="350dp"
-            android:layout_height="600dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="32dp"
-            android:background="@drawable/rectangle">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rectangle2" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="음식"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="55dp"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="120dp"
+                android:background="@drawable/rectangle5"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="생필품"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="138dp"/>
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rectangle" />
 
             <TextView
                 android:layout_width="300dp"
@@ -60,16 +115,16 @@
                 android:text="현재 진행 중인 공구(2/5)"
                 android:textColor="@color/backcolor"
                 android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"/>
 
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:text="내가 진행하는 공구(1)"
                 android:textColor="@color/backcolor"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="50dp"
                 android:textSize="13dp"/>
 
             <ImageView
@@ -77,63 +132,83 @@
                 android:layout_width="330dp"
                 android:layout_height="100dp"
                 android:background="@drawable/banner3"
-                android:layout_marginLeft="13dp"
-                android:layout_marginTop="55dp"/>
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="95dp"/>
 
             <TextView
-                android:layout_width="50dp"
-                android:layout_height="20dp"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
                 android:text="공구 확정"
                 android:id="@+id/sold"
                 android:textColor="@color/backcolor"
                 android:textStyle="bold"
-                android:layout_marginTop="80dp"
-                android:layout_marginLeft="280dp"
-                android:textSize="10dp"/>
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="300dp"
+                android:textSize="12dp"/>
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/chat"
                 android:id="@+id/chatchain"
-                android:layout_marginTop="95dp"
-                android:layout_marginLeft="285dp"/>
+                android:layout_marginTop="115dp"
+                android:layout_marginLeft="315dp"/>
 
             <ScrollView
                 android:layout_width="350dp"
                 android:layout_height="600dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="420dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/rectangle3" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="470dp"
+                        android:background="@drawable/search" />
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="465dp"
+                        android:background="@drawable/home" />
+
+                    <ImageView
+                        android:id="@+id/schat"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="305dp"
+                        android:layout_marginTop="475dp"
+                        android:background="@drawable/chat" />
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
         </FrameLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:background="@color/white"
-        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="13dp"
-            android:background="@drawable/search"
-            app:tint="@color/backcolor" />
-
-        <ImageView
-            android:id="@+id/home2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="13dp"
-            android:background="@drawable/home" />
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/chat" />
-    </LinearLayout>
 
 </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

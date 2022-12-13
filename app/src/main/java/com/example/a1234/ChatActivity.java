@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,14 +23,14 @@ public class ChatActivity extends AppCompatActivity {
     private static final int NOTIFICATION_ID = 0;
 
     private TextView logout, sold;
-    private ImageView alarm;
+    private ImageView alarm, chatbutton;
 
     @Override
     protected void onCreate(@Nullable Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_chat);
 
-        logout = (TextView) findViewById(R.id.logout3);
+        logout = (TextView) findViewById(R.id.logout2);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,11 +39,28 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
 
-        alarm = (ImageView) findViewById(R.id.alarm3);
+        alarm = (ImageView) findViewById(R.id.alarm2);
         alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ChatActivity.this, AlarmActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        sold = (TextView) findViewById(R.id.sold);
+        sold.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ChatActivity.this, "송금을 완료했다는 알림을 방장에게 보냈습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        chatbutton = (ImageView) findViewById(R.id.chatchain);
+        chatbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ChatActivity.this, ChattingActivity.class);
                 startActivity(intent);
             }
         });

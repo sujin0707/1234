@@ -21,7 +21,7 @@ public class AlarmActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AlarmActivity.this, HomeActivity.class);
+                Intent intent = new Intent(AlarmActivity.this, HomeActivity1.class);
                 startActivity(intent);
             }
         });
