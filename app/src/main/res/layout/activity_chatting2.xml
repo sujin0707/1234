@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chatting2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#445EFF"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Back4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginBottom="11dp"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                </View>
+
+                <ImageView
+                    android:id="@+id/ChatMeun"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginBottom="11dp"
+                    app:srcCompat="@drawable/chatting_menu" />
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:text="스시 같이 드실 분"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="2022년 12월 13일"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="PM 07:46"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="170dp"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/rectangle4"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="270dp"
+                    android:text="안녕하세요"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_marginTop="65dp" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/MessageEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                android:hint="메시지를 입력해주세요."/>
+
+
+            <ImageView
+                android:id="@+id/MessageSend"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="11dp"
+                app:srcCompat= "@drawable/message_send" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
